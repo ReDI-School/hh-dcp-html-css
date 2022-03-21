@@ -1,0 +1,200 @@
+body {
+  /* Note about Inheritance: The font-family is inherited by
+  the child elements in the body */
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  font-size: 1.2em;
+
+  /**
+   * This padding-top needs to be the same value as the
+   * value of the height which is applied on the nav.
+   * This is needed so that the navigation content and the body
+   * content do not collied with each other.
+   */
+  padding-top: 50px;
+}
+
+#about {
+  /* Note about Specificity: Here we defined a background-color that
+  overrides the background-color defined using the `section` class which
+  has lesser specificity */
+  background-color: peachpuff;
+}
+
+#proficiency {
+  background-color: peachpuff;
+}
+
+.section {
+  background-color: paleturquoise;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 25px;
+}
+
+footer {
+  text-align: end;
+}
+
+/*
+ * This is our main class for all anchor tags (links)
+ * which are placed in the navigation.
+ * Using a descendant selector:
+ * https://www.w3schools.com/css/css_combinators.asp
+ */
+nav a {
+  text-decoration: none;
+}
+
+#greeting {
+  margin-right: 20px;
+}
+
+/* Applying some basic text shadow over my greeting */
+#greeting h1 {
+  /* Note about Specificity: Here we defined a font-family that
+  overrides the general font-family defined for all h1 tags */
+  font-family: Baskerville, "Baskerville Old Face", Garamond, "Times New Roman",
+    serif;
+}
+
+ul.main-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  /**
+   * To add horizontal scroll bars we need
+   * to use the following rule. Keep in mind that
+   * the white-space: nowrap is required to override
+   * the default white-space behaviour which prevents
+   * the overflow-x from working.
+   * https://www.w3schools.com/howto/howto_css_menu_horizontal_scroll.asp
+   */
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+/* The `link` pseudo-class applies styles to unvisited links.
+ * If you visit or have visited this link, then the `link` pseudo class
+ * is not going to get triggered anymore unless you to clear your browser history.
+ * - In our case we use the same styles for both visited and unvisited links.
+ */
+.main-menu a:link,
+.main-menu a:visited {
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/*
+ * :active MUST come after :hover (if present) in the CSS definition in order to be effective!
+ * More info at https://www.w3schools.com/cssref/sel_active.asp
+ */
+.main-menu a:hover,
+.main-menu a:active {
+  background-color: cadetblue;
+  color: white;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Julius Sans One", sans-serif;
+}
+
+h1 {
+  font-size: 3.2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* nav styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background: lightsteelblue;
+  width: 100%;
+  top: 0;
+
+  /**
+   * This height needs to be the same value as the
+   * value of the padding-top which is applied on the body.
+   * This is needed so that the navigation content and the body
+   * content do not collied with each other.
+   */
+  height: 50px;
+}
+
+nav * {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin: 5px 50px 10px 50px;
+}
+
+.logo a {
+  cursor: pointer;
+}
+
+.logo h2 {
+  font-family: cursive;
+  text-shadow: 1px 1px black;
+}
+
+.main-menu {
+  height: 100%;
+}
+
+.main-menu li {
+  height: 100%;
+  display: inline-block;
+}
+/* end nav styles */
+
+/* header styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 40px auto;
+  padding: 0 60px;
+  /**
+   * This is used so that the header content (e.g. image)
+   * does not stretch too much on big screens
+   */
+  max-width: 1400px;
+}
+
+header > div {
+  flex: 1;
+}
+
+header img {
+  width: 100%;
+  border-radius: 20px;
+  max-height: 700px;
+  /* learn more about this property
+  here https://css-tricks.com/almanac/properties/o/object-fit/  */
+  object-fit: cover;
+}
+/* end header styles */

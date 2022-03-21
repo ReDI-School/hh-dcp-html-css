@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    nav {
+      background-color: grey;
+      font-size: 25px
+    }
+
+    li {
+      display: inline;
+      margin-right: 40px;
+      position: relative;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: turquoise;
+    }
+
+    li .dropdown {
+      display: none
+    }
+
+    .divider {
+      display: block;
+      width: 100%;
+      margin: 0;
+    }
+
+    li:hover .dropdown {
+      display: block;
+      background-color: grey;
+      margin: 0;
+      padding: 0;
+      left: 0%;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href=".">Home</a></li>
+      <li><a href=".">About</a></li>
+      <li>
+        <a href=".">Products</a>
+        <ul class="dropdown">
+          <hr class="divider" />
+          <li><a href=".">Engineering</a></li>
+          <li><a href=".">Telecom</a></li>
+          <li><a href=".">Energy</a></li>
+          <li><a href=".">Finance</a></li>
+          <li><a href=".">Consultancy</a></li>
+        </ul>
+      </li>
+      <li><a href=".">Services</a></li>
+      <li><a href=".">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>

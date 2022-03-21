@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* Apply further styles here or add rules to the existing selectors */
+    /* Hint: Using `display: none;` makes an element disappear from the page */
+    li {
+      position: relative;
+    }
+
+    li:hover .dropdown {
+      left: 0%;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href=".">Home</a></li>
+      <li><a href=".">About</a></li>
+      <li>
+        <a href=".">Products</a>
+        <ul class="dropdown">
+          <hr class="divider" />
+          <li><a href=".">Engineering</a></li>
+          <li><a href=".">Telecom</a></li>
+          <li><a href=".">Energy</a></li>
+          <li><a href=".">Finance</a></li>
+          <li><a href=".">Consultancy</a></li>
+        </ul>
+      </li>
+      <li><a href=".">Services</a></li>
+      <li><a href=".">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>
