@@ -3,7 +3,7 @@ title: Lesson 1 - Welcome & Organization
 nav_order: 1
 ---
 
-# Welcome & Organization
+# WEEEEelcome & Organization
 
 ## Class Agenda
 
