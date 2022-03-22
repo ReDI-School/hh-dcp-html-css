@@ -1,6 +1,6 @@
 ![ReDI](redi_banner.png)
 
-# Welcome to HTML & CSS course of NRW
+# Welcome to HTML & CSS course of Hamburg 
 
 In this course we will learn how websites are made and teach you how to build your own.
 
